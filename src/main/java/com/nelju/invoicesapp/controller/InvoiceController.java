@@ -4,9 +4,11 @@ import com.nelju.invoicesapp.entity.Invoice;
 import com.nelju.invoicesapp.service.InvoiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
+@CrossOrigin(maxAge = 3600)
 @RestController
 public class InvoiceController {
 
